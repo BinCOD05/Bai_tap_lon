@@ -2,9 +2,9 @@
 function Home(){
     return (
         <>
-        <h1 className = "text-xl font-bold text-red-500">Đây là trang chủ</h1>
-
-      
+        <div className="bg-amber-950 w-full h-screen"></div>
+        
+        <div className="w-4xl h-96 bg-amber-400" ></div>
         </>
     )
 }
