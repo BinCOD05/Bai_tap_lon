@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1 ,
+        "title" : "Dr Strange",
+        "desc" : "🌀 Phù Thủy Tối Thượng bước vào đa vũ trụ hỗn loạn, đối mặt chính mình và hiểm họa từ mọi thực tại. Cuộc chiến vượt ngoài trí tưởng tượng bắt đầu!",
+        "video":"/src/assets/videos/Dr_Strange_trailer.mp4",
+        "poster" :"/src/assets/images/poster_dr_strange.jpg"
+    },
+     {
+        "id": 2,
+        "title" : "Spider Man",
+        "desc" :"🕷️ Spider-Man – Khi Peter Parker khoác lên mình bộ đồ Người Nhện, anh không chỉ chiến đấu với tội phạm mà còn phải đối mặt với những thử thách khắc nghiệt của tuổi trẻ, trách nhiệm và sự hy sinh trong hành trình trở thành anh hùng đích thực.",
+        "video":"/src/assets/videos/Spider_man_verse.mp4",
+        "poster" :"/src/assets/images/spider_man.jpg"
+    }
+  
+]

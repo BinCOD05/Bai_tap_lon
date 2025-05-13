@@ -8,5 +8,27 @@
     --color-bg: rgb(20, 20, 20);
     --color-red:#e50914;
     --color-text-white: #e5e5e5;
+    --color-black-25: rgba(0, 0, 0, 0.25); 
+    
+    
 
+}
+
+.div-responsive {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .div-responsive {
+    width: 80%;  
+  }
+}
+
+
+@media (max-width: 480px) {
+  .div-responsive {
+    width: 80%;  
+  }
 }
