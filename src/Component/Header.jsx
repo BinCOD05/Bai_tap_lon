@@ -56,8 +56,8 @@ const Header = () => {
                 </nav>
                 <div className="text-white basis-4/6 lg:basis-1/6 flex items-center  justify-end lg:justify-between  space-x-5">
                       
-                      <input className='p-1.5 bg-gray-800' type='text' placeholder='Tìm kiếm'></input>
-                      <button className='rounded-[5px] hidden sm:block p-2.5 bg-[var(--color-red)] text-shadow-white cursor-pointer'>Search</button>
+                      {/* <input className='p-1.5 bg-gray-800' type='text' placeholder='Tìm kiếm'></input>
+                      <button className='rounded-[5px] hidden sm:block p-2.5 bg-[var(--color-red)] text-shadow-white cursor-pointer'>Search</button> */}
                       <div id='toggle-menu-icon' className=" px-5 cursor-pointer z-1000 lg:hidden " ref={toggleMenu}>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />

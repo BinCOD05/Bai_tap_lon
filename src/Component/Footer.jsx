@@ -12,12 +12,12 @@ const Footer = () => {
                     <div className="flex items-center gap-3 mb-3">
                         
                         <div>
-                            <p className="text-lg font-bold">Meo den<sup className="text-orange-500">+</sup></p>
-                            <p className="text-sm text-gray-400">Phim Mới and Chill</p>
+                            <p className="text-lg font-bold">Meo Chill</p>
+                            <p className="text-sm text-gray-400">Meo and Chill</p>
                         </div>
                     </div>
                     <p className="text-sm text-gray-300">
-                        PhimMoi and Chill - Website xem phim trực tuyến chất lượng cao, cập nhật phim mới nhất vietsub mỗi ngày, xem miễn phí hàng nghìn bộ phim HD/4K đa thể loại.
+                        Meo and Chill - Website xem phim trực tuyến chất lượng cao, cập nhật phim mới nhất vietsub mỗi ngày, xem miễn phí hàng nghìn bộ phim HD/4K đa thể loại.
                     </p>
                 </div>
 
@@ -42,7 +42,7 @@ const Footer = () => {
                             <li><Link to="#">Điều khoản sử dụng</Link></li>
                             <li><Link to="#">Chính sách riêng tư</Link></li>
                             <li><Link to="#">Khiếu nại bản quyền</Link></li>
-                            <li className="text-gray-500 mt-2">© 2025 PhimChill.Net</li>
+                            <li className="text-gray-500 mt-2">© 2025 Meo chill</li>
                         </ul>
                     </div>
 
