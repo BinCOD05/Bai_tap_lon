@@ -47,12 +47,12 @@ function Home() {
                 className="absolute inset-0 w-full h-full object-cover aspect-video">
               </video>
                 <div className="absolute z-60  max-w-5xl  h-full flex justify-center items-center md:w-[60%] w-full sm:w-[70%]">
-                    <div className="w-[400px] text-amber-50 px-3.5">
-                      <h1 className="text-5xl font-bold md:text-4xl  lg:text-6xl mb-2 ">{selectedMovie?.title}</h1>
+                    <div className="w-[400px] text-amber-50 px-3.5 text-center sm:text-start pt-5">
+                      <h1 className="hidden sm:inline font-bold sm:text-5xl  lg:text-6xl mb-3 ">{selectedMovie?.title}</h1>
                       <p className="text-lg mb-2 hidden sm:block">{selectedMovie?.desc}</p>
-                      <div className="flex space-x-7">
+                      <div className="flex space-x-7 justify-center sm:justify-start">
                         <Link to={`/detail/${selectedMovie?.id}`}>
-                          <button className="md:px-3 py-2 px-1.5 bg-white rounded-sm cursor-pointer lg:text-sm  text-black flex items-center font-bold">
+                          <button className="md:px-3 sm:py-2 px-2 py-2 text-[14px] lg:text-[17px] transition-all ease-in-out duration-300 bg-white sm:rounded-sm rounded-full cursor-pointer md:text-sm  text-black flex items-center font-bold">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 mr-2">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 010 1.972l-11.54 6.347a1.125 1.125 0 01-1.667-.986V5.653Z" />
                             </svg>
@@ -88,28 +88,28 @@ function Home() {
                
               {movies.slice(0, 4).map((item) => (
                <SwiperSlide key={item.id}>
-                <div style={{ aspectRatio: '16/9' }} className="py-0.5 min-w-[120px] sm:min-w-[160px] md:min-w-[180px] lg:min-w-[220px] max-w-[200px] w-full aspect-video cursor-pointer relative group"
-                     onClick={() => handleSelectMovie(item)}>
-                  <div className="w-full h-full overflow-hidden rounded-xl relative">
-                    <img
-                      src={item.poster}
-                      alt={item.title}
-                      className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-115"
-                      style={{ objectPosition: "100% 15%" }}/>
-                    <div className="absolute w-full h-full bg-black  z-21 top-0 opacity-20 "></div>
-                    <p className="text-sm font-bold absolute bottom-4 text-white left-4 z-20 uppercase">
-                      {item.title}
-                    </p>
+                  <div style={{ aspectRatio: '16/9' }} className="py-0.5 min-w-[100px] sm:min-w-[160px] md:min-w-[180px] lg:min-w-[220px] max-w-[200px] w-full aspect-video cursor-pointer relative group"
+                      onClick={() => handleSelectMovie(item)}>
+                    <div className="w-full h-full overflow-hidden rounded-xl relative">
+                      <img
+                        src={item.poster}
+                        alt={item.title}
+                        className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-120"
+                        style={{ objectPosition: "100% 15%" }}/>
+                      <div className="absolute w-full h-full bg-black  z-21 top-0 opacity-5 "></div>
+                      <p className="sm:text-sm  text-[10px] font-bold absolute bottom-4 text-white left-4 z-20 uppercase">
+                        {item.title}
+                      </p>
+                    </div>
                   </div>
-                </div>
               </SwiperSlide>
               ))}
 
             </Swiper>
           </div>
         </div>
-        <div className="w-full h-[130px] md:h-[20px] bg-black z-40"></div>
-        <MovieList title={"Phim Để Cử"} data={movies.slice(0,10)}/>
+        <div className="w-full h-[100px] md:h-[20px] bg-black z-40"></div>
+        <MovieList title={"Phim Để Cử"} data={movies.slice(2,10)}/>
         <MovieList title={"Phim hay trong ngày"} data={movies.slice(10,15)}/>
       </div>
     </>
@@ -117,3 +117,4 @@ function Home() {
 }
 
 export default Home;
+ 

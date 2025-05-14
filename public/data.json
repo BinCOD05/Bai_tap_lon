@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Dr.Strange: Chú Thuật Hồi ChiếnChiến",
+    "title": "Dr.Strange",
     "desc": "🌀 Phù Thủy Tối Thượng bước vào đa vũ trụ hỗn loạn, đối mặt chính mình và hiểm họa từ mọi thực tại. Cuộc chiến vượt ngoài trí tưởng tượng bắt đầu!",
     "video": "videos/Dr_Strange_trailer.mp4",
     "poster": "images/poster_dr_strange.jpg",
@@ -144,7 +144,7 @@
   },
   {
     "id": 12,
-    "title": "Thủy Quái 2: Rừng ĐenĐen",
+    "title": "Thủy Quái 2",
     "video": "video/thuy_quai_2o24.mp4",
     "poster": "images/poster_thuy_quai_2024.jpg",
     "desc": "Peter Parker trở lại trong vai Người Nhện, đối mặt với những kẻ thù cũ và trách nhiệm mới. Phim vừa mang tính giải trí cao vừa khắc họa sâu sắc tâm lý người hùng.",
@@ -170,7 +170,7 @@
   },
   {
     "id": 14,
-    "title": "Vacation",
+    "title": "Vacation 2",
     "video": "video/Vacation.mp4",
     "poster": "images/poster_vacation_2015.jpg",
     "desc": "Vua sư tử Simba phải vượt qua mất mát và nỗi sợ hãi để giành lại ngôi vị. Câu chuyện kinh điển về danh dự, tình thân và sự trưởng thành.",
@@ -183,7 +183,7 @@
   },
   {
     "id": 15,
-    "title": "The Beverly HHillbilies",
+    "title": "Hillbilies",
     "video": "video/The_beverly_hillbilies.mp4",
     "poster": "images/poster_the_beverly.jpg",
     "desc": "Một ông già vận chuyển ma túy bất đắc dĩ bước vào thế giới tội phạm với những tình huống dở khóc dở cười. Phim vừa sâu sắc vừa hồi hộp về sự chuộc lỗi.",

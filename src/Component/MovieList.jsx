@@ -20,23 +20,23 @@ const responsive = {
     items: 5
   },
   tablet: {
-    breakpoint: { max: 900, min: 700},
+    breakpoint: { max: 900, min: 350},
     items: 3
   },
   mobile: {
-    breakpoint: { max: 700, min: 100 },
+    breakpoint: { max: 350, min: 100 },
     items: 2
   }
 }
 
 const MovieList = ({title , data}) => {
     return(
-        <div className="text-white p-10 mb-2">
-            <h1 className="font-bold text-2xl">{title}</h1>
+        <div className="text-white sm:p-8  p-5 ">
+            <h1 className="font-bold text-2xl mb-3.5 inline-block cursor-pointer hover:text-red-700 transition-all duration-700 ease-in-out"><Link to="/Danh-Muc">{title}</Link></h1>
             <Carousel responsive={responsive} className="flex space-x-10 items-center">
                
                 {data.length > 0 &&  data.map((item) => (
-                     <div key={item.id} className="w-[200px] h-[300px] relative group rounded-xl overflow-hidden cursor-pointer">
+                     <div key={item.id} className="sm:w-[200px] sm:h-[300px]  w-[110px] h-[150px] relative group rounded-xl overflow-hidden cursor-pointer">
                        <Link to={`/detail/${item.id}`}>
                             <div className="group-hover:scale-110 w-full h-full transition-all duration-700 ease-in-out ">
                             <div className="w-full h-full bg-black opacity-10 group-hover:hidden absolute top-0"></div>
