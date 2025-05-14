@@ -50,7 +50,7 @@ const Header = () => {
                     
                     <li><Link to="/" className='ct-menu-item'  >Trang Chủ</Link></li>
                     <li><Link to="/Danh-Muc"  className='ct-menu-item'>Danh Mục</Link></li>
-                    <li><Link to="/The-loai"  className='ct-menu-item'>Thẻ loại</Link></li>
+                    <li><Link to="/The-loai"  className='ct-menu-item'>About</Link></li>
                    
                   </ul>
                 </nav>
