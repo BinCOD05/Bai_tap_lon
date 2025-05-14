@@ -12,6 +12,9 @@ const Header = () => {
     if(toggleMenu.current && toggleMenu.current.contains(e.target)){
       topMenuRef.current.classList.toggle("hidden");
     }
+    else{
+      
+    }
    } 
    document.addEventListener('click' , handleClick)
    return ()=> document.removeEventListener('click' , handleClick)
@@ -43,11 +46,11 @@ const Header = () => {
                   <span className='hidden md:inline'> MeoChill</span>
                 </Link></div>
                 <nav className=' hidden lg:flex basis-3/6 items-center  justify-center absolute top-[90%] right-[10px] bg-[var(--color-red)]/80  h-[30vh] py-10 lg:py-0 md:px-5  px-3.5 lg:static lg:h-auto lg:bg-transparent z-999  rounded-3xl border-1 lg:border-0'ref={topMenuRef} >
-                  <ul className='flex flex-col lg:flex-row p-1 gap-5 justify-between '>
+                  <ul className='flex flex-col lg:flex-row p-1 gap-5 justify-between  relative'>
                     
-                    <li><Link to="/" className='text-[var(--color-text-white)]  font-bold px-3 hover:text-gray-500  transition duration-300 ease-in-out'  >Trang Chủ</Link></li>
-                    <li><Link to="/Danh-Muc"  className='text-[var(--color-text-white)] px-3 hover:text-gray-500 transition duration-300 ease-in-out'>Danh Mục</Link></li>
-                    <li><Link to="/The-loai"  className='text-[var(--color-text-white)] px-3 hover:text-gray-500 transition duration-300 ease-in-out '>Thẻ loại</Link></li>
+                    <li><Link to="/" className='ct-menu-item'  >Trang Chủ</Link></li>
+                    <li><Link to="/Danh-Muc"  className='ct-menu-item'>Danh Mục</Link></li>
+                    <li><Link to="/The-loai"  className='ct-menu-item'>Thẻ loại</Link></li>
                    
                   </ul>
                 </nav>
@@ -55,7 +58,7 @@ const Header = () => {
                       
                       <input className='p-1.5 bg-gray-800' type='text' placeholder='Tìm kiếm'></input>
                       <button className='rounded-[5px] hidden sm:block p-2.5 bg-[var(--color-red)] text-shadow-white cursor-pointer'>Search</button>
-                      <div id='toggle-menu-icon' className=" px-3 cursor-pointer z-1000 " ref={toggleMenu}>
+                      <div id='toggle-menu-icon' className=" px-5 cursor-pointer z-1000 lg:hidden " ref={toggleMenu}>
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                       </svg>

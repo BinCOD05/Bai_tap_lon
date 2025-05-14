@@ -42,7 +42,7 @@ const MovieList = ({title , data}) => {
                             <div className="w-full h-full bg-black opacity-10 group-hover:hidden absolute top-0"></div>
                             <img src={item.poster} alt="" className="w-full h-full object-cover"/>
                             <div className="absolute uppercase text-[16px] group-hover:bottom-[40%] bottom-[-10%] transition-all ease-in-out duration-900 flex justify-center w-full">
-                            <p className="font-bold text-white  " >{item.title}</p>
+                            <p className="font-bold text-white hidden sm:inline " >{item.title}</p>
                             </div>
                             </div>
                         </Link>

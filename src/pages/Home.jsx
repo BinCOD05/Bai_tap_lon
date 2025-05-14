@@ -19,7 +19,7 @@ function Home() {
       .then((res) => {
         setMovies(res.data);
         if (res.data.length > 0) {
-          setSelectedMovie(res.data[2]);
+          setSelectedMovie(res.data[1]);
         }
       })
       .catch((err) => {
@@ -31,6 +31,10 @@ function Home() {
     setSelectedMovie(movie);
   };
 
+  //  xu ly am thanh
+
+
+
   return (
     <>
       <div className="w-full  bg-black/95">
@@ -38,17 +42,18 @@ function Home() {
           <div className="w-full h-full bg-black z-50 absolute opacity-30"></div>
 
           <div className="relative w-full h-full aspect-video">
-               <video
+               <video 
+                
                 src={selectedMovie ? selectedMovie.video : "/src/assets/videos/Vikings Season 1 Trailer - Rewatch Again (1080p, h264).mp4"}
                 autoPlay
                 playsInline
-                muted
+                // muted
                 
                 className="absolute inset-0 w-full h-full object-cover aspect-video">
               </video>
                 <div className="absolute z-60  max-w-5xl  h-full flex justify-center items-center md:w-[60%] w-full sm:w-[70%]">
                     <div className="w-[400px] text-amber-50 px-3.5 text-center sm:text-start pt-5">
-                      <h1 className="hidden sm:inline font-bold sm:text-5xl  lg:text-6xl mb-3 ">{selectedMovie?.title}</h1>
+                      <h1 className="hidden sm:inline-block font-bold sm:text-5xl  lg:text-6xl pb-3">{selectedMovie?.title}</h1>
                       <p className="text-lg mb-2 hidden sm:block">{selectedMovie?.desc}</p>
                       <div className="flex space-x-7 justify-center sm:justify-start">
                         <Link to={`/detail/${selectedMovie?.id}`}>
@@ -66,6 +71,7 @@ function Home() {
                             </svg>
                             Thông tin chi tiết
                           </button> */}
+                        
                     </div>
                   </div>
               </div>
@@ -97,7 +103,7 @@ function Home() {
                         className="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-120"
                         style={{ objectPosition: "100% 15%" }}/>
                       <div className="absolute w-full h-full bg-black  z-21 top-0 opacity-5 "></div>
-                      <p className="sm:text-sm  text-[10px] font-bold absolute bottom-4 text-white left-4 z-20 uppercase">
+                      <p className="sm:text-sm  text-[10px] font-bold absolute bottom-4 text-white left-4 z-20 uppercase ">
                         {item.title}
                       </p>
                     </div>

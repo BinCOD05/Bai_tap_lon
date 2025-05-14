@@ -27,7 +27,7 @@ function Detail() {
         
         
            <div className="relative w-full aspect-video shadow-lg mb-6">
-           <video src={`/public/${movie?.video}`} className="w-full h-full absolute top-0 left-0 z-999" controls ></video>
+           <video src={`/public/${movie?.video}`} className="w-full h-full absolute top-0 left-0 z-10" controls ></video>
         </div>
 
             <h1 className="text-white text-2xl p-5 uppercase font-semibold">Giới Thiệu Phim:</h1>
