@@ -57,7 +57,7 @@ function Home() {
                       <p className="text-lg mb-2 hidden sm:block">{selectedMovie?.desc}</p>
                       <div className="flex space-x-7 justify-center sm:justify-start">
                         <Link to={`/detail/${selectedMovie?.id}`}>
-                          <button className="md:px-3 sm:py-2 px-2 py-2 text-[14px] lg:text-[17px] transition-all ease-in-out duration-300 bg-white sm:rounded-sm rounded-full cursor-pointer md:text-sm  text-black flex items-center font-bold">
+                          <button className="md:px-3 sm:py-2 px-2 py-2 text-[14px] lg:text-[17px] transition-all ease-in-out duration-700 bg-white sm:rounded-sm rounded-full cursor-pointer md:text-sm  text-black flex items-center font-bold hover:text-red-600  ">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 mr-2">
                               <path strokeLinecap="round" strokeLinejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 010 1.972l-11.54 6.347a1.125 1.125 0 01-1.667-.986V5.653Z" />
                             </svg>
@@ -116,7 +116,7 @@ function Home() {
         </div>
         <div className="w-full h-[100px] md:h-[20px] bg-black z-40"></div>
         <MovieList title={"Phim Để Cử"} data={movies.slice(2,10)}/>
-        <MovieList title={"Phim hay trong ngày"} data={movies.slice(10,15)}/>
+        <MovieList title={"Phim hay trong ngày"} data={movies.slice(8,15)}/>
       </div>
     </>
   );
